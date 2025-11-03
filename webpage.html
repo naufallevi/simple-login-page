@@ -1,35 +1,37 @@
-<!doctype html>
-<html>
-      <head>
-      <meta charset="utf-8">
-      <title> Login page</title>
-      <link rel="stylesheet" href="sty.css">
-      </head>
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="sty.css" />
+  </head>
   <body>
-    <ul>
-      <li><a href="home page.html">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">services</a></li>
-      <li><a href="#">pictures</a></li>
-      <li><a href="#">Videos</a></li>
-      <li><a href="#">music</a></li>
-      <li><a href="#">Contact us</a></li>
-    </ul>
-    <div class="box">
-      <h2>LOGIN</h2>
-      <form>
-        <div class="inputBox">
-          <input type="text" name="" required=""></input>
+    <div class="login-container">
+      <h2>Simple Login</h2>
+      <p>Welcome to this page 🙏🏻</p>
+      <form id="login-form">
+        <div class="input-box">
+          <input type="text" name="username" required />
           <label>Username</label>
         </div>
-        <div class="inputBox">
-          <input type="password" name="" required=""></input>
+        <div class="input-box">
+          <input type="password" name="password" id="password" required />
           <label>Password</label>
+          <span class="toggle-password" id="togglePassword">Show</span>
         </div>
-        <input type="submit" name="" value="Submit">
-
+        <button type="submit">SUBMIT</button>
+        <div class="footer-links">
+          <a href="#">Forgot Password?</a>
+          <a href="#">Sign Up</a>
+        </div>
       </form>
-   </div>
+    </div>
 
+    <script src="scr.js"></script>
   </body>
 </html>
